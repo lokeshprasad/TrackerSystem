@@ -1,0 +1,24 @@
+    <form class="form-signin">
+        <h4>Hello {{data.data.name}}</h4>
+        <h4>{{error}}</h4>
+        <h3 class="form-signin-heading">Step 2</h3>
+
+        <label for="name" class="sr-only">Parent Name</label>
+        <input type="text" id="inputEmail" class="form-control" placeholder="Name" ng-model="user.name" required autofocus>
+        <br>
+        <label for="inputEmail" class="sr-only">Parent Email</label>
+        <input type="email" class="form-control" placeholder="Email" ng-model="user.mail" required autofocus>
+        <br>
+        <label for="inputphone" class="sr-only">Parent Phone</label>
+        <input type="number" class="form-control" placeholder="Phone" ng-model="user.phone" required autofocus>
+        <br>
+        <label for="to" class="sr-only">To</label>
+        <input type="text" class="form-control" placeholder="Origin" ng-model="user.to" required autofocus>
+        <br>
+        <label for="to" class="sr-only">From</label>
+        <input type="text" class="form-control" placeholder="Destination" ng-model="user.from" required autofocus>
+
+
+        <br>
+        <button class="btn btn-lg btn-primary btn-block" ng-click="saveStep2()">Next</button>
+    </form>

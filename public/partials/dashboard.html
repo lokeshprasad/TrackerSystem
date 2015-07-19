@@ -1,0 +1,17 @@
+<h3>Welcome {{username}}</h3>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Username</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="x in journey">
+        <td>{{ x.to }}</td>
+        <td>{{ x.from }}</td>
+        <td><a href="/tracker/map/{{x._id}}" target="_blank">link</a> </td>
+    </tr>
+    </tbody>
+</table>

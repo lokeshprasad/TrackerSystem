@@ -1,0 +1,17 @@
+    <form class="form-signin">
+        <h4>{{error}}</h4>
+        <h3 class="form-signin-heading">Step 1</h3>
+
+        <label for="name" class="sr-only">Name</label>
+        <input type="text" id="inputEmail" class="form-control" placeholder="Name" ng-model="user.name" required autofocus>
+        <br>
+        <label for="inputEmail" class="sr-only">Email</label>
+        <input type="email" class="form-control" placeholder="Email" ng-model="user.mail" required autofocus>
+        <br>
+        <label for="inputphone" class="sr-only">Phone</label>
+        <input type="number" class="form-control" placeholder="Phone" ng-model="user.phone" required autofocus>
+
+
+        <br>
+        <button class="btn btn-lg btn-primary btn-block" ng-click="saveStep1()">Next</button>
+    </form>

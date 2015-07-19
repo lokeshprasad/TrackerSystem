@@ -1,0 +1,1 @@
+module.exports.invalid_username = 'Username is incorrect';

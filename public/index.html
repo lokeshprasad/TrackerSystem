@@ -1,0 +1,34 @@
+<!doctype html>
+<html ng-app="tracker">
+<head>
+	<script src="lib/angular.min.js"></script>
+    <script src="lib/angular-route.min.js"></script>
+    <script src="lib/angular-cookies.js"></script>
+    <script src="js/core.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/signin.css">
+</head>
+
+<body ng-controller="LoginController">
+<div class="container">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Tracker System</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Admin</a></li>
+                    <li><a href="#/candidate/step1">Child</a></li>
+                    <li ng-show="username"><a href="#/logout">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div ng-view></div>
+</div>
+
+</body>
+</html>
